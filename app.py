@@ -102,10 +102,14 @@ def login():
     return redirect("/login")
 
 
+""" --for testing --
+  # queries all the users and prints name, user name, and their salted hashed passwords
+  
 users = User.query.all()
-
 for user in users:
     print(user.name, user.userName, user.hashed)
+    
+    """
 
 if __name__ == "__main__":
     app.run(debug=True)
