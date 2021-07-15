@@ -1,0 +1,32 @@
+{%extends "index.html" %}
+{%block title%} Register {%endblock%}
+{% block body %}
+
+
+<div id="register" style="padding:50px">
+    <form action="/register" method="post">
+        <h2>Register: </h2>
+        <div style="padding:10px">
+        <label>First Name: <input autocomplete="off"
+                                    name="firstName" placeholder="Name" type="text" required></label>
+        </div>
+
+        <div style="padding:10px">
+            <label>User Name: <input autocomplete="off"
+                                    name="userName" placeholder="User Name" type="text" required></label>
+            </div>
+
+
+        <div style="padding:10px">
+        <label>Password: <input autocomplete="off"
+                                    name="password" placeholder="Password" type="password" required></label>
+        </div>
+
+
+        <input name="submit" type="submit">
+
+    </form>
+</div>
+
+
+{% endblock %}

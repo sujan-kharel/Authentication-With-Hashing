@@ -1,0 +1,28 @@
+
+{%extends "index.html" %}
+{%block title%} Login {%endblock%}
+{% block body %}
+
+{{errMessage}}
+
+<div id="login" style="padding:50px">
+    <form action="/login" method="post">
+        <h2>Login: </h2>
+        <div style="padding:10px">
+            <label>User Name: <input autocomplete="off"
+                                    name="userName" placeholder="User Name" type="text" required></label>
+            </div>
+
+        <div style="padding:10px">
+        <label>Password: <input autocomplete="off"
+                                    name="password" placeholder="Password" type="password" required></label>
+            </div>
+
+
+      <input name="submit" type="submit">
+
+    </form>
+</div>
+
+
+{% endblock %}

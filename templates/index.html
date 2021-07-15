@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{%block title%} Home {%endblock%}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div id="main-menu">
+    <a href="/"><h1>Main Menu</h1></a>
+
+    <div class = "main-menu">
+
+        <form action="/requestPage" method="Post">
+
+            <button type="submit" name="main" value="main">Home</button>
+            <button type="submit" name="register" value="register">Register</button>
+            <button type="submit" name="login" value="login">Login</button>
+
+
+        </form>
+    </div>
+
+</div>
+    <div class="container">
+        {% block body %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
